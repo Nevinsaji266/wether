@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
+    />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container" style="margin-top: 4rem;"> 
+        <header>
+            <h1>Current Weather</h1>
+        </header>
+
+        <form class="search-form">
+            <input
+              type="text"
+              id="search"
+              placeholder="Enter city, state or country name"
+              required
+            />
+            <button type="submit">Search</button>
+        </form>
+
+        <section class="grid">
+            <div class="grid-item full-width">
+                <h2 class="location">Location</h2>
+                <div class="weather-data">
+                    <div>
+                        <span class="temp">99.99</span>
+                        <span class="unit">°C</span>
+                    </div>
+                    <div class="desc">Description</div>
+                    <div>
+                        <strong>High:</strong>
+                        <span class="max">99.99 °C</span>
+                        <strong>Low:</strong>
+                        <span class="min">99.99 °C</span>
+                    </div>
+                </div>
+                <img
+                  src="https://refinedguides.com/weather-app/img/01d.png"
+                  alt="Weather Icon"
+                  class="weather-image"
+                />
+            </div>
+
+            <div class="grid-item small">
+                <div>
+                    <h5>Moisture Level</h5>
+                    <p class="humidity">99%</p>
+                </div>
+                <div>
+                    <h5>Wind Speed</h5>
+                    <p class="wind-speed">99.99 m/s</p>
+                </div>
+            </div>
+
+            <div class="grid-item small">
+                <h5>Apparent Temperature</h5>
+                <p class="feels-like">99.99 °C</p>
+           
+                <h5>Pressure</h5>
+                <p class="pressure">9999 hPa</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
